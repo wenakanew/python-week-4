@@ -1,0 +1,9 @@
+with open("original.txt", "r") as original_file:
+    content = original_file.read()
+
+modified_content = content.upper()
+
+with open("modified.txt", "w") as modified_file:
+    modified_file.write(modified_content)
+
+print("Modified content written to 'modified.txt'.")
